@@ -1,0 +1,340 @@
+@media screen and (max-width:768px) {
+
+    /* ********* index first page section ********* */
+#navbar{
+    display: block !important;
+    padding: 0 20px !important;
+}
+.navbar-toggle{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin-left: 90px;
+}
+#mobile-toggler{
+    display: none;
+    flex-direction: column;
+    background-color: gainsboro;
+    padding-bottom: 30px;
+}
+.cart{
+    margin-top: 10px;
+}
+
+/* hero section start here  */
+
+#hero{
+   padding-top: 23% !important;
+}
+.mobile-bg{
+    display: flex !important;
+}
+.mobile-bg img{
+    height: 250px;
+    width: 100%;
+}
+.hero-details{
+    display: none !important;
+}
+
+/* ********* company brand ******** */
+.company-brand{
+    display: grid !important;
+    grid-template-columns: repeat(3,100px);
+    gap: 20px;
+}
+
+/* slider section  */
+.slider{
+    display: none ;
+}
+ .slidermb {
+      display: block;
+      position: relative;
+      margin: 20px 30px;
+      width: 87%;
+      object-position: top;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .slidesmb {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slidemb {
+      min-width: 100%;
+      height: 100%;
+    }
+    .slidemb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 20px;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+
+/* sell now section  */
+.cloths-sell{
+    padding-bottom: 20px;
+}
+.cloths-sell img {
+    display: none;
+}
+
+/* ********* product item section start here ****** */
+#products{
+    grid-template-columns: repeat(2, 200px) !important;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+/* show more products img  */
+#product-img{
+   grid-template-columns: repeat(2, 200px) ;
+   flex-wrap: wrap;
+   gap: 10px;
+   font-size: 18px;
+}
+#product-img img{
+    width: 190px;
+}
+
+/* winter sell section  */
+.trends-details{
+    flex-direction: column;
+}
+#trends-details{
+    margin: 0 !important;
+}
+.winter-sell{
+    grid-template-columns: repeat(2,180px);
+    justify-content: center;
+}
+.sweter{
+    width: auto;
+    padding: 0;
+}
+.winter-special{
+    width: auto;
+}
+#preview{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#preview img{
+    padding-top: 18%;
+    height: 300px !important;
+    width: 200px;
+}
+/* ********* contact section strat here ******** */
+#contact{
+    gap: 30px;
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+.contact-about{
+    display: none;
+}
+#contact .latest-content{
+    display: none;
+}
+.latest-data{
+    margin-top: 10px;
+}
+
+/* ************* about us page section ************ */
+
+#about-our{
+    padding-top: 25%;
+    margin: 0 30px;
+    gap: 0;
+}
+.about-img img{
+  display: none;
+}
+.details-img img{
+    display: block;
+    float: right;
+    margin: 20px;
+}
+#about-me{
+    margin: 50px 30px;
+    gap: 0;
+}
+.about-me-img{
+    display: none;
+}
+.about-info-img{
+    display: block;
+    float: left;
+    margin: 20px;
+}
+
+/* ******** history line section ******* */
+
+.history-line{flex-direction: column;
+    display: block;
+}
+.vl{
+    display: none;
+}
+
+/* ******** products section pages ********* */
+
+#product{
+    padding-top: 25%;
+    grid-template-columns: repeat(2,180px) !important;
+    flex-direction: column;
+    gap: 20px !important;
+}
+.product-img img{
+    width: 100%;
+}
+#products1 img{
+    height: 300px;
+    width: 190px;
+}
+#product button{
+  margin-top: 5px;
+}
+#products1, #products{
+    display: grid;
+    grid-template-columns: repeat(2,180px);
+    justify-content: center;
+}
+
+
+/* *********** category pages section ********** */
+
+/* ********* men page section ********* */
+
+.cloths-img{
+    gap: 0;
+    padding: 20px 0;
+    padding-left: 9%;
+    margin: 0 20px;
+    margin-top: 50px;
+}
+.cloths-img img{
+    margin-left: -70px;
+    height: 340px;
+}
+#men-cloths {
+    margin: 0;
+    padding-top: 18%;
+}
+.cloths-details p{
+    font-size: 18px;
+    width: 250px;
+}
+.our-products{
+    grid-template-columns: repeat(2,200px);
+    row-gap: 10px;
+}
+.products-details img{
+    width: 190px;
+    height: 300px;
+}
+
+/* ********** women pages section ******* */
+.women-details {
+    flex-direction: column;
+    padding-top: 15%;
+}
+.women-details p{
+    width: 100%;
+}
+.women-details img{
+    height:300px;
+}
+.product-details{
+    width: auto;
+}
+
+/* ********* kids pages section ********* */
+.kids-details{
+    margin: 0;
+    align-items: center;
+    padding-top: 25%;
+    margin:0 30px;
+}
+.kids-details img{
+    display: none;
+    float: left;
+    height: 200px;
+    width: 100px;
+}
+.kids-details p{
+    width: 100%;
+}
+.float{
+    display: block !important; 
+}
+.kids-item{
+    flex-direction: column;
+    margin: 0 30px !important;
+}
+.kids-info{
+    margin: 0;
+}
+.kids-info p{
+    width: 100% !important;
+}
+
+/* ******* contact pages section ******* */
+
+.container{
+    margin: 0 !important;
+}
+.row-name{
+    margin-top: 15px !important;
+}
+
+/* ***** add cart product pages section ***** */
+
+#cart{
+    margin: 0 !important;
+}
+
+/* ****** sign up pages section ****** */
+#signup input{
+    width: 100%;
+}
+#signup .contact-data{
+    margin: 50px 20%;
+    margin-top: 80px;
+}
+#signup .bvalidator-gray-tooltip{
+    left: 100px !important;
+}
+
+/* ***** login form pages section ***** */
+.login-form{
+    margin: 0 10%;
+}
+.login-form .bvalidator-gray-tooltip{
+    left: 50px !important;
+}
+}

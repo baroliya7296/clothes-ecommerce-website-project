@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    
+    <!-- ************ icon *********** -->
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+/>
+
+<!-- *********** css link ********* -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/min-width-450px.css">
+<link rel="stylesheet" href="css/min-width-768px.css">
+<link rel="stylesheet" href="css/min-width-992px.css">
+<link rel="stylesheet" href="css/min-width-1200px.css">
+
+<!-- **********google-font ********* -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@400..700&family=Emblema+One&family=Lobster&family=Oleo+Script:wght@400;700&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<!-- ************* aos css effect ************ -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- *************** bootstrap css effect *************** -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css
+">
+
+<!-- *************** bootstrap js effect *************** -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- *************** navbar ************** -->
+     <section id="navbar">
+
+         <span class="mobile-menu d-flex align-items-center justify-content-between gap-5"> 
+                   <h1 class="fs-3 m-1 font-style" ><img src="img/cloth-logo-1-removebg-preview.png" alt="">  Fashion</h1>
+                <button class="navbar-toggle" type="button">
+                    <i onclick="toggleNavbar()" class="fa-solid fa-bars"></i>
+                </button>
+         </span>
+
+             <div id="mobile-toggler">
+                     <a href="index.html">Home</a>
+                     <a href="about-us.html">About Us</a>
+                     <a href="product.html">Product</a>
+                    <div class="categories">
+                         <a href="#">Categories</a>
+                         <div class="categories-dropdown">
+                             <a href="men.html">MEN</a>
+                             <a href="women.html">WOMEN</a>
+                             <a href="kids.html">KIDS</a>
+                            </div>
+                    </div>
+                     <a href="contact.html">Contact</a>
+                    <div class="cart ms-3 fs-4">
+                            <a class="text-dark" href="cart.html"><i class="fa-solid fa-cart-shopping ms-5"></i></a>
+                       <div class="nav-item">
+                           <span class="login-btn ms-4 rounded-3 fs-6"><i class="fa-solid fa-circle-user fs-4 me-1"></i> Login <i class="fa-solid fa-caret-down "></i> </span>
+                             <div class="drop-down">
+                                <p>New customer? <a href="signup-page.html">Sign Up</a> </p>
+                                 <a href="#"><i class="fa-solid fa-user"></i>My Profile</a>
+                                 <a href="#"><i class="fa-solid fa-wallet"></i>Orders</a>
+                                 <a href="#"><i class="fa-solid fa-gifts"></i>Rewards</a>
+                                 <a href="#"><i class="fa-solid fa-gift"></i>Gift Cards</a>
+                             </div>
+                       </div>
+                    </div>
+            </div>
+
+    </section>
+
+    <!-- ********* product pages section *********  -->
+
+    <section id="product" class="d-flex gap-5">
+        <div class="product-img">
+            <img src="img/girl-clothes-img-1.avif" alt="">
+            <img class="more-img" src="img/girl-clothes-img-8.jpg" alt="">
+        </div>
+        <div class="product-info">
+            <h1 class="fs-1 text-danger fw-bold" style="font-family: 'Times New Roman', Times, serif;">Long Sleeve Dresses</h1>
+            <p class="fs-5 text-secondary" style="font-family: Georgia, 'Times New Roman', Times, serif;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui...</p>
+            <h2 class="text-danger  fw-bold">$540</h2>
+            <div class="product-data d-flex  align-items-center ">
+                <div class="product-details mt-2">
+                    <h3 class="fs-4 mb-3 m-0 fw-medium" style="font-family: 'Times New Roman', Times, serif;">SIZE:</h3>
+                    <h3 class="fs-4 mb-3 m-0 fw-medium" style="font-family: 'Times New Roman', Times, serif;">COLOR:</h3>
+                    <h3 class="fs-4 mb-3 m-0 fw-medium" style="font-family: 'Times New Roman', Times, serif;">QUANTITY:</h3>
+                    <h3 class="fs-4 mb-3 m-0 fw-medium" style="font-family: 'Times New Roman', Times, serif;">SUBTOTAL:</h3>
+                    <h3 class="fs-4 mb-3 m-0 fw-medium" style="font-family: 'Times New Roman', Times, serif;">MOVEMENT:</h3>
+                    <h3 class="fs-4 mb-3 m-0 fw-medium" style="font-family: 'Times New Roman', Times, serif;">AVAILABILITY:</h3>
+                </div>
+                <div class="products-price">
+                    <div class="mb-2 fs-6">
+                        <span style="border: 1px solid black; padding: 3px 10px;">XXL</span>
+                        <span style="border: 1px solid black; padding: 3px 10px;">M</span>
+                        <span style="border: 1px solid black; padding: 3px 10px;">S</span>
+                    </div>
+                    <P class="mt-3" style="height: 30px; width: 30px; background-color: blueviolet;"></P>
+                  <div class="quantity-wrapper">
+                     <button class="quantity-btn" onclick="changeQuantity(-1)">−</button>
+                     <input type="number" id="quantity" class="quantity-input" value="1" min="1" style="width: 40px;">
+                     <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                  </div>
+                    <p class="text-danger fs-3 m-0">$540</p>
+                    <p class="mt-2 text-secondary">Jackets</p>
+                    <p class="text-secondary">Many In Stock</p>
+                </div>
+            </div>
+            <button class="btn btn-danger" onclick="goToPage2()"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            <button class="btn btn-success"><i class="fa-solid fa-bag-shopping"></i> Buy Now</button>
+            <button class="btn btn-primary mt-1"><i class="fa-solid fa-heart"></i> Add to favourite</button>
+        </div>
+    </section>
+
+    <!-- ************* show more product image ************ -->
+    <hr>
+    <h1 class="m-0 text-center text-danger fs-1 fw-bold" style="font-family: 'Times New Roman', Times, serif;">Our Products</h1>
+    <hr>
+                    <div id="products1"  style="gap:20px;"></div>
+                   
+
+             <!-- ************** contact section ********** -->
+<section id="contact">
+              <div class="contact-details">
+                <div class="latest-details">
+                  <p class="latest-header">Latest Posts</p>
+                  <div class="latest-data">
+                    <span>27 JULY</span> 
+                    <div class="about-content">
+                      <p class="latest-about">Lorem ipsum dolor sit amet.</p>
+                      <p class="latest-content">This is nature image is amazing.</p>
+                    </div>
+                  </div>
+                  <div class="latest-data">
+                    <span>27 JULY</span> 
+                    <div class="about-content">
+                      <p class="latest-about">Lorem ipsum dolor sit amet.</p>
+                      <p class="latest-content">This is nature image is amazing.</p>
+                    </div>
+                  </div>
+                  <div class="latest-data">
+                    <span>27 JULY</span> 
+                    <div class="about-content">
+                      <p class="latest-about">Lorem ipsum dolor sit amet.</p>
+                      <p class="latest-content">This is nature image is amazing.</p>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="contact-about contact-details">
+                <p class="about-header">About</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, dolorem iusto vel facere cupiditate debitis, est aliquam nobis repudiandae exercitationem molestiae velit esse nisi quo animi ullam porro maxime minima?</p>
+                <p class="more-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam iste ex nobis illo accusantium nemo doloribus cumque quaerat laborum.</p>
+              </div>
+              <div class="contact-social contact-details">
+                <p class="details-header">Stay Connect</p>
+               <a href="https://www.facebook.com/" style="text-decoration: none; color: white;" ><p><i class="fa-brands fa-facebook"></i> Facebook</p></a>
+
+                <a href="https://twitter.com/i/flow/signup" style="text-decoration: none; color: white;"><p><i class="fa-brands fa-twitter"></i> Twitter</p></a>
+
+                <a href="https://en.wikipedia.org/wiki/Rashtriya_Swayamsevak_Sangh" style="text-decoration: none; color: white;"><p><i class="fa-solid fa-rss"></i> RSS</p></a>
+
+                <a href="https://www.google.co.in/"style="text-decoration: none; color: white;" ><p><i class="fa-brands fa-google"></i> Google+</p></a>
+              </div>
+</section>
+
+
+<script>
+    // for add to cart 
+       const products = [
+      { id: 7, name: 'Sponsored', image: 'img/girl-clothes-img-2.jpg', details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>' },
+
+      { id: 8, name: 'Women trending', image: 'img/girl-clothes-img-8.jpg', details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+
+      { id: 9, name: 'Night wear', image: 'img/girl-clothes-img-11.jpg', details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>' },
+
+      { id: 10, name: 'Women Dress', image: 'img/girl-clothes-img-3.jpg', details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+
+      { id: 11, name: 'Plaza jeans', image: 'img/girl-clothes-img-13.jpg',  details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+
+      { id: 12, name: 'Women Trends', image: 'img/girl-clothes-img-12.jpg',  details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+
+      { id: 13, name: 'American Plaza', image: 'img/girl-clothes-img-1.avif',  details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+
+      { id: 14, name: 'Punjabi Kurta', image: 'img/girl-clothes-img-9.jpg',  details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+
+      { id: 15, name: 'Treds Dress', image: 'img/girl-clothes-img.jpg',  details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+
+      { id: 16, name: 'Open Kurta', image: 'img/Rectangle 22.png',  details: 'WINSSUTRA', details1: 'Unstiched Cotton Blend Kurta...', prise: '₹500 <strike class="fw-medium fs-6">₹1299</strike> <span class="fs-5 text-success">61% off</span>'},
+    ];
+
+    const container = document.getElementById('products1');
+    
+    products.forEach(product => {
+        const div = document.createElement('div');
+        div.className = 'product';
+        div.innerHTML = `
+        <img src="${product.image}" onclick="showDetails(${product.id})" alt="${product.name}">
+        <p class="m-0 mt-3 fw-bold fs-5">${product.name}</p> 
+        <p class="m-0 fs-6">${product.details}</p>
+        <P class="m-0 fw-medium">${product.details1}</P>
+        <span> <span class="m-0 mt-2 fw-bold fs-5">${product.prise}</span>
+        <i class="fa-solid fa-cart-shopping text-primary fs-4 ms-2" id="buttonB" onclick="addToCart(${product.id}); alert('${product.name} added to cart!')"></i></span>
+        </div>
+      `;
+      container.appendChild(div);
+    });
+
+    function addToCart(productId) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const product = products.find(p => p.id === productId);
+      const existing = cart.find(item => item.id === productId);
+
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ ...product, quantity: 1 });
+      }
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+  </script>
+
+<!-- ********* all js called ********* -->
+ <script src="min.js/main.js"></script>
+
+<!-- ************** bootstrap script ************* -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>

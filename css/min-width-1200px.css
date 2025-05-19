@@ -1,0 +1,188 @@
+@media screen and (min-width:1000px) {
+    
+   #navbar{
+    display: flex !important;
+    padding: 0 20px;
+    align-items: center;
+}
+.navbar-toggle{
+    display: none;
+}
+#mobile-toggler{
+    display: flex !important;
+    flex-direction: row;
+    background-color:white;
+    padding-bottom: 0;
+}
+
+/* ******** main section ******** */
+
+#hero{
+    padding-top: 10% !important;
+    width:80%;
+    margin: 0 auto;
+}
+.main-img img{
+    width: 100%;
+}
+.slider{
+    width: 1200px;
+}
+.cloths-sell{
+    justify-content: space-between;
+}
+.cloths-sell img:nth-child(1){
+    display:flex;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(6,190px) !important;
+    justify-content: center;
+    gap: 30px;
+}
+#products1{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,230px);
+}
+#product-img{
+    display: none;
+    grid-template-columns: repeat(5,240px) !important;
+}
+#product-img img{
+    width: 220px;
+}
+ #trends-details{
+    flex-direction: row;
+ }
+ .winter-special{
+    margin-left: 20px;
+ }
+#preview{
+    padding-top: 12% !important;
+}
+ /* ***** contact section ***** */
+
+ #contact{
+    padding: 20px 90px;
+    justify-content: space-around;
+    gap: 50px;
+ }
+ #contact .contact-details {
+  width: 600px;
+}
+.more-info{
+    display: block;
+}
+
+/* ***** about-us pages section ***** */
+
+#about-our{
+    margin: 0 15%;
+    gap: 0;
+}
+.about-details{
+    padding-top: 10%;
+}
+.about-img img{
+    height: 450px !important;
+    margin: 0;
+    margin-top: 30%;
+}
+.details-img{
+    width: 60%;
+    margin: 0 !important;
+}
+#about-me{
+    margin:0  15%;
+}
+.about-me-img img{
+    margin-top:40px;
+    height: 400px;
+}
+.history-line{
+    display: grid;
+}
+.vl{
+    display: block;
+}
+
+/* ****** product pages section ****** */
+
+#product{
+    padding-top: 10% !important;
+}
+.product-info p{
+    width: 80%;
+}
+ /* ******** product pages section ******** */
+
+#product-img{
+    grid-template-columns: repeat(5,220px) !important;
+}
+
+ /* ***** men pages section ***** */
+
+#men-cloths{
+    padding-top: 10%;
+    width: 70%;
+    margin: 0 auto;
+}
+.cloths-details p{
+    width: 500px;
+}
+  .our-products{
+    grid-template-columns: repeat(4,280px);
+}
+
+/* ****** women pages section ****** */
+
+#women-cloths{
+   padding-top: 10%;
+}
+ .women-details p{
+    width: 500px;
+    font-size: 20px;
+ }
+
+ /* ********* kids pages section ******** */
+
+ .kids-details{
+    padding-top: 8%;
+    margin: 0 10%;
+ }
+ .women-info p{
+    width: 80% !important;
+ }
+ .kids-item{
+    margin-left:10%;
+ }
+ .kids-item p{
+    width: 70% !important;
+ }
+ .kids-item1 img{
+    margin-right: 10%;
+ }
+ /* **** contact pages section **** */
+
+ #contact-info{
+     padding-left:5% !important ;
+ }
+ .contact-header{
+    padding-top: 0;
+}
+
+ /* ****** sign up pages section ****** */
+ #signup .bvalidator-gray-tooltip{
+    left:400px !important;
+}
+#signup .contact-data{
+   margin: 0 15% 30px;
+ }
+
+/* ***** login pages section ***** */
+.login-form{
+    margin: 50px 30%;
+    padding: 50px 30px;
+}
+}

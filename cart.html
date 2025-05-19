@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+
+    <!-- **** css links **** -->
+     <link rel="stylesheet" href="css/min-width-450px.css">
+  <style>
+    div{
+        margin: 50px;
+    }
+    .btn{
+        padding: 5px 10px;
+        background-color: rgb(127, 127, 243);
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    .btn-1{
+        background-color: crimson;
+        margin-left: 95px;
+    }
+  </style>
+</head>
+<body>
+    <hr>
+  <h1 style="text-align: center; margin-top: 20px; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 35px;">Cart Page</h1>
+  <hr>
+  <div id="cart"></div>
+  <button onclick="goToShopping()" class="btn btn-1">Back to Shopping</button>
+
+  <script>
+    function renderCart() {
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const cartContainer = document.getElementById('cart');
+      cartContainer.innerHTML = '';
+
+      if (cart.length === 0) {
+        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+        return;
+      }
+
+      cart.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.style.display = 'flex';
+        div.innerHTML = `
+          <img src="${item.image}" width="200"><br>
+          
+          <p style="margin-left:30px;">
+          <strong style="font-size:35px;">${item.name}</strong><br> <br>
+          <span style="font-size:20px; ">${item.details} </span>
+          <br>
+          <br>
+          <span style="font-size:20px;"> Quantity:</span>
+          <button onclick="changeQuantity(${index}, -1)">−</button>
+          ${item.quantity}
+          <button onclick="changeQuantity(${index}, 1)">+</button><br> <br>
+          <button class="btn" onclick="removeItem(${index})">Remove</button>
+          </p>
+        `;
+        cartContainer.appendChild(div);
+      });
+    }
+
+    function changeQuantity(index, delta) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart[index].quantity += delta;
+      if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);
+      }
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function removeItem(index) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+    }
+
+    function goToShopping() {
+      window.location.href = 'index.html';
+    }
+
+    window.onload = renderCart;
+
+  </script>
+</body>
+</html>

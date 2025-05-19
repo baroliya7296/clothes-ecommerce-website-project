@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Product Details</title>
+</head>
+<body>
+
+  <h1>Product Details</h1>
+  <div id="productDetails"></div>
+
+  <script>
+    const product = JSON.parse(localStorage.getItem("selectedProduct"));
+
+    if (product) {
+      document.getElementById("productDetails").innerHTML = `
+        <h2>${product.name}</h2>
+        <img src="${product.image}" alt="${product.name}" style="width:200px;">
+        <p>Price: ${product.price}</p>
+      `;
+    } else {
+      document.getElementById("productDetails").innerText = "No product found in cart.";
+    }
+  </script>
+
+
+
+</body>
+</html>

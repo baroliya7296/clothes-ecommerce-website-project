@@ -1,0 +1,775 @@
+body
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+#navbar
+{
+    display: flex;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px;
+    margin: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+    width: 100%;
+}
+ #mobile-toggler
+{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+#mobile-toggler a
+{
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(71, 71, 211, 0.856);
+    position: relative;
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 1px;
+}
+#mobile-toggler a::before
+{
+    content: '';
+    height: 4px;
+    left: 0;
+    width: 0;
+    background-color: rgba(71, 71, 211, 0.856);
+    bottom: -1px;
+    position: absolute;
+    transition: all 300ms;
+    border-radius: 12px;
+}
+.cart a::before{
+  background-color: transparent !important;
+}
+#mobile-toggler a:hover::before{
+    width: 100%;
+}
+.font-style
+{
+    font-family: "Pacifico", cursive;
+}
+h1 img
+{
+    height: 80px;
+    margin: 0;
+    padding:0;
+}
+h3 i{
+    color: black;
+    margin-left: 50px;
+}
+
+.login-btn{
+    transition: all 300ms;
+    padding: 10px 10px 8px;
+}
+.login-btn:hover{
+    background-color: rgba(0, 0, 255, 0.705);
+    color: white;
+}
+.fa-caret-down{
+    transition: all 300ms;
+}
+.login-btn:hover .fa-caret-down
+{
+    rotate: 180deg;
+} 
+.nav-item
+{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right:80px;
+}
+.drop-down
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: white;
+    width: 230px;
+    border-radius: 12px;
+}
+.drop-down p{
+    font-size: 16px;
+    margin: 5px 10px;
+    border-bottom: 1px solid gray;
+    padding:10px 5px;
+}
+.drop-down p a{
+    font-size: 16px !important;
+    margin-left: 10px !important;
+    padding: 0;
+    color: rgba(0, 0, 255, 0.705);
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.drop-down a
+ {
+    color: black;
+    padding: 10px 0;
+    margin: 2px 0;
+    margin-left: 25px !important;
+    font-weight: 300;
+    font-size: 20px !important;
+    border-bottom: 1px solid black;
+    width: 180px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .drop-down a::before{
+    background-color:transparent !important;
+  }
+  .drop-down i
+  {
+    margin-right: 15px;
+    font-size: 18px;
+    color: rgba(71, 71, 211, 0.856);
+  }
+  .drop-down a:hover 
+  {
+    background-color: #f1f1f1;
+  }
+  .nav-item:hover .drop-down 
+  {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  
+/* ** categories drop-down section ** */
+
+.categories{
+  position: relative;
+}
+.categories-dropdown a{
+  display: none;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  color: black;
+  padding: 10px 0;
+  margin-left: 0 !important;
+  margin: 5px;
+  font-weight: 500;
+  font-size: 20px !important;
+  border-bottom: 1px solid black;
+}
+.categories-dropdown{
+  left: 0;
+  top: 100%;
+  position: absolute;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: white;
+  width: 210px;
+  border-radius: 12px;
+}
+.categories:hover .categories-dropdown a{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+  .categories-dropdown a::before{
+    background-color:transparent !important;
+  }
+  .categories-dropdown a:hover 
+  {
+    background-color: #f1f1f1;
+  }
+
+  /* *********** main pages section ******** */
+  
+  #hero{
+    padding-top: 10% !important;
+  }
+  .mobile-bg{
+    display: none;
+  }
+  .cloths-sell
+  {
+    background-color: rgb(245, 217, 80);
+    width: fit-content;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 30px 50px 0 50px;
+  }
+  .cloths-sell img{
+    height: 300px;
+    width: 350px;
+  }
+  .cloths-sell h1:nth-child(1){
+    background-color: white;
+    width: fit-content;
+    padding: 1px 10px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    rotate: -3deg;
+  }
+  .cloths-sell h1{
+    font-family: "Poetsen One", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+  }
+   .slider {
+    position: relative;
+    width: 1200px;
+    height: 250px;
+    overflow: hidden;
+    margin: auto;
+  }
+  .slider-1{
+    display: none;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 41%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  button.prev { left: 10px; }
+  button.next { right: 10px; }
+
+  .dots {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+  }
+  .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .dot.active {
+    background: #2c2b2b;
+  }
+  .slidermb{
+    display: none;
+  }
+  .youngest-fav
+  {
+   font-family: "Lilita One", sans-serif;
+  }
+ .vectore h2{
+  font-family: "Lilita One", sans-serif;
+ }
+ .trending-img img ,#product-img img
+ {
+   height: 250px;
+   width: 180px;
+   border-radius: 12px;
+   transition: all 300ms;
+  }
+  .trending-img{
+    display: grid;
+    grid-template-columns: repeat(6,200px);
+    align-items: center;
+    gap: 15px;
+ }
+ 
+ /* ************** show-more option details ************* */
+ #product-img img{
+  border-radius: 0;
+  height: 290px;
+  width: 225px;
+ }
+ #product-img{
+   display: grid;
+   grid-template-columns: repeat(5,220px);
+   gap: 30px;
+   justify-content: center;
+   display: none;
+   margin-top: 40px;
+ }
+ .togglebutton{
+  padding: 5px 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-top: 20px;
+  background-color: transparent;
+  color: rgb(92, 92, 236);
+  font-size: 20px;
+ }
+ .trending-img img:hover {
+  scale: 1.03;
+ }
+ #product-img img:hover {
+  scale: 1.03;
+ }
+ .trending-img h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+ }
+.product-details {
+  width: 250px;
+  padding: 10px;
+}
+ /* ***********trends-details section********* */
+.trends-details{
+  display: flex;
+  justify-content: space-around;
+}
+ .trends-details img{
+  width: 190px;
+  height: 240px;
+ }
+ .trends-details p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+ }
+ .sweter {
+  width: 260px;
+  padding: 15px 30px;
+  text-align: center;
+}
+.sweter img{
+   transition: all 300ms;
+ }
+ .sweter img:hover{
+  scale: 1.03;
+ }
+ .winter-special{
+  width: 570px;
+ }
+ .winter-special h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: 600;
+ }
+ .winter-sell{
+  display: grid;
+  grid-template-columns: repeat(2,260px);
+  gap: 15px;
+ }
+ #preview
+ {
+  display: flex;
+  gap: 40px;
+  margin-top:30px ;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+ }
+ .gallery img {
+  height: 250px;
+  width: 180px;
+  /* margin: 10px; */
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.gallery img:hover {
+  border: 2px solid #007BFF;
+}
+#preview {
+  margin-top: 20px;
+}
+#image-details {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+#more-offers
+{
+  display: none;
+}
+#itemQty{
+  width: 50px;
+}
+
+/* *********** contact section  *********** */
+#contact {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  padding: 20px 80px;
+}
+#contact .contact-details {
+  width: 600px;
+}
+#contact .contact-details p {
+  margin: 0;
+  margin-top: 5px;
+}
+#contact .latest-header {
+  font-weight: 600;
+  font-size: 25px !important;
+  margin-bottom: 20px !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+#contact .contact-details .latest-data {
+  display: flex;
+  gap: 10px;
+}
+.contact-details .latest-data span {
+  background-color: white;
+  height: 25px;
+  width: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  padding: 15px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  margin: 0;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#contact .latest-about {
+  font-weight: 600;
+  margin: 0 !important;
+  font-size: 15px !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#contact .latest-content {
+  font-weight: 100;
+  font-size: 15px;
+  margin: 0 !important;
+  margin-bottom: 10px !important;
+}
+#contact .about-header {
+  font-weight: 600;
+  font-size: 25px !important;
+  margin-bottom: 20px !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 500px;
+}
+#contact .details-header {
+  font-weight: 600;
+  font-size: 25px !important;
+  margin-bottom: 20px !important;
+}
+#contact .contact-about p {
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#contact .contact-social p {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#contact .contact-social p i {
+  margin-right: 20px;
+}
+#contact .fa-facebook {
+  padding: 5px;
+  background-color: rgb(76, 76, 231);
+}
+#contact .fa-twitter {
+  padding: 5px;
+  background-color: aqua;
+}
+#contact .fa-rss {
+  padding: 5px;
+  background-color: rgb(255, 102, 0);
+}
+#contact .fa-google {
+  padding: 5px;
+  background-color: rgb(255, 0, 0);
+}
+
+/* ************* about pages section ************ */
+
+#about-our{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15%;
+  gap: 50px;
+  padding-top: 10%;
+}
+#about-me{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15%;
+  margin-top: 80px;
+  gap: 50px;
+}
+.details-img img{
+ display: none;
+}
+.about-info-img{
+  display: none;
+}
+
+/* *********** history-line section ********* */
+.history-line{
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.history-line img{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit:fill ;
+  margin: 0;
+  transition:all 300ms;
+}
+.history-line img:hover{
+  border: 1px solid crimson;
+ box-shadow: crimson 0px 3px 8px;
+ scale: 1.05;
+}
+.history-line h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: crimson;
+}
+.history-line p{
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.vl {
+  border-left: 6px solid black;
+  height: 50px;
+  margin: 0;
+  margin-left: 47%;
+  margin-top: -10px;
+}
+.ball{
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-top: -8px;
+  margin-right: -1px;
+  background-color: white;
+  transition: all 300ms;
+}
+
+/* *********** product pages section ************ */
+
+/* ********** quantity section ******** */
+
+#product{
+  padding-top: 12%;
+  margin: 0 50px 50px 50px; 
+}
+
+.quantity-container {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.quantity-container button {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.quantity-container input {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+.more-img{
+  display: none;
+}
+/* ******* men pages section ******* */
+#men-cloths{
+  padding-top: 10%;
+  margin: 0 90px;
+}
+.cloths-img{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 80px;
+  padding: 0;
+  background-color: gainsboro;
+  border-radius: 20px;
+}
+.cloths-img img{
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+.cloths-details p{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 500px;
+}
+.products-details img{
+  height: 350px;
+  width: 280px;
+}
+
+/* hover image and change the image  */
+
+.image-container{
+  position: relative;
+
+}
+.image-container img{
+  transition: opacity 0.3 ease-in-out;
+}
+ .hover-image.second {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.image-container:hover .second {
+  opacity: 1;
+}
+.image-container:hover .first {
+  opacity: 0;
+}
+
+.our-products{
+  display: grid;
+  grid-template-columns: repeat(4,280px);
+  justify-content: space-evenly;
+}
+
+/* ********* women wear details section ********** */
+
+#women-cloths{
+  padding-top: 10%;
+}
+.women-details{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:0;
+  margin:0 50px;
+}
+.women-details img{
+  height: 350px;
+  width:fit-content;
+  margin: 0;
+}
+.women-details p{
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width:600px;
+  margin: 0;
+}
+#product-item #product-img{
+  display: grid;
+  margin-bottom: 50px;
+}
+
+/* ********* kids wear details section ********** */
+
+.kids-details{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:0;
+  margin: 0 200px;
+  padding-top: 9%;
+}
+.kids-details img{
+  height: 410px;
+  width: 500px;
+  margin: 0;
+}
+.float{
+  display: none;
+}
+.kids-details p{
+  width: 80%;
+   font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.kids-item{
+  display: flex;
+  gap: 30px;
+  margin: 50px;
+}
+.kids-item img{
+  height: 400px;
+}
+.kids-info{
+  margin: 50px;
+}
+/* *********** contact section ******* */
+
+#contact-info{
+  background-color: #fcf5f5;
+  padding-top: 10%;
+}
+.contact-header{
+  padding: 80px 20px 20px 20px;
+}
+
+
+/* ****** signup pages ****** */
+
+#signup{
+  text-align: center;
+  padding-top: 10%;
+}
+#signup .contact-data{
+  padding:20px 50px;
+  margin: 0 30%;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#signup input{
+  background-color: white;
+  border: 1px solid gray;
+  width: 400px;
+  margin: 0 auto;
+}
+#signup .bvalidator-gray-tooltip{
+  left: 700px !important;
+}
+
+/* ***** login pages section ****** */
+
+.login-form{
+  padding:20px 80px;
+  margin: 0 30%;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-form input{
+  width: 200px !important;
+}

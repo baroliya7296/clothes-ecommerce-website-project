@@ -1,0 +1,63 @@
+@media screen and (min-width:992px) {
+    
+.slider{
+    display: flex;
+    width: 100%;
+}
+#product-img{
+    grid-template-columns: repeat(4,200px);
+}
+#trends-details{
+    display: flex ;
+    flex-direction: row;
+    width: 100%;
+}
+.winter-special{
+    margin: 0;
+}
+.winter-sell{
+    grid-template-columns: repeat(2,220px);
+    align-items: center;
+    justify-content: center;
+}
+.sweter{
+    width: 220px;
+    padding: 15px 0;
+}
+#preview{
+    padding-top: 15% !important;
+}
+
+/* ******** product pages section ******** */
+#products{
+    grid-template-columns: repeat(3,200px) !important;
+}
+#products1{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    justify-content: center;
+}
+/* ***** men pages section ***** */
+.cloths-img{
+    gap: 80px;
+}
+.our-products{
+    grid-template-columns: repeat(3,280px);
+}
+/* ****** women pages section ****** */
+.women-details img{
+    width: 500px;
+}
+/* ***** contact pages section ***** */
+.contact-header{
+    padding-top: 30px;
+}
+.container iframe{
+   width: 400px;
+}
+
+ /* ****** sign up pages section ****** */
+ #signup .bvalidator-gray-tooltip{
+    left:620px !important;
+}
+}
